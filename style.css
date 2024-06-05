@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --margin-main: 1rem;
+  --padding-main: 1rem;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  gap: var(--margin-main);
+}
+.imgContainerWrapper {
+  width: 30%;
+  height: 100vh;
+  position: relative;
+}
+.hero {
+  width: 70%;
+  height: 100vh;
+}
+.img {
+  max-width: 100%;
+  height: 100vh;
+  object-fit: fill;
+}
+.imgContainer {
+  position: absolute;
+  z-index: -1;
+}
+.ImgOdin {
+  position: absolute;
+}
