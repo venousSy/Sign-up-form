@@ -5,11 +5,17 @@
 :root {
   --margin-main: 1rem;
   --padding-main: 1rem;
+  --padding-top: 100px;
+  --gap-main: 2rem;
+  --hieght-main: 300px;
+}
+@font-face {
+  font-family: 'Norse-bold';
+  src: url('/Norse-Bold.otf');
 }
 .container {
   display: flex;
   justify-content: center;
-  gap: var(--margin-main);
 }
 .imgContainerWrapper {
   width: 30%;
@@ -29,6 +35,58 @@
   position: absolute;
   z-index: -1;
 }
+
 .ImgOdin {
   position: absolute;
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  opacity: 0.6;
+  font-family: norse-bold;
+  color: white;
+  font-size: 5em;
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  z-index: 1;
+  top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d4d4d4;
+}
+.heroText {
+  font-weight: bolder;
+  padding: var(--padding-main);
+  padding-top: var(--padding-top);
+  padding-bottom: 10%;
+}
+.form {
+  background-color: whitesmoke;
+  padding-top: var(--padding-top);
+  width: 100%;
+}
+input {
+  display: flex;
+  flex-direction: column;
+}
+.firstName,
+.lastName,
+.email,
+.phoneNumber,
+.password,
+.confirmPassword,
+legend {
+  margin: var(--margin-main);
+  width: 35%;
+  display: inline-block;
+}
+.fieldset {
+  margin: var(--margin-main);
+}
+legend {
+  padding-left: var(--padding-main);
 }

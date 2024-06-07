@@ -10,7 +10,11 @@
     <main>
       <div class="container">
         <div class="imgContainerWrapper">
-          <img src="odin-lined.png" alt=""  class="ImgOdin"></img>
+          <div class="ImgOdin">
+            <img src="odin-lined.png" alt="odin-lined" />
+            <div class="odin">ODIN</div>
+          </div>
+
           <div class="imgContainer">
             <img src="bg.avif" alt="" class="img" />
           </div>
@@ -21,10 +25,35 @@
             Repudiandae, id obcaecati consequuntur eos corporis deleniti?
           </div>
           <form action="" class="form">
-            <h2 class="formText">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Reiciendis dolorum et vel?
-            </h2>
+            <fieldset class="fieldset">
+              <legend class="legend">Contact Details</legend>
+              <div class="firstName">
+                <label for="firstName">FIRST NAME</label>
+                <input type="text" id="firstName" />
+              </div>
+              <div class="lastName">
+                <label for="lastName">Last NAME</label>
+                <input type="text" id="lastName" />
+              </div>
+              <div class="email">
+                <label for="email">EMAIL</label
+                ><input type="email" id="email" />
+              </div>
+              <div class="phoneNumber">
+                <label for="phoneNumber">PHONE NUMBER</label>
+                <input type="text" id="phoneNumber" />
+              </div>
+              <div class="password">
+                <label for="password">PASSWORD</label
+                ><input type="password" id="password" />
+              </div>
+              <div class="confirmPassword">
+                <label for="password"></label>CONFIRM PASSWORD<input
+                  type="text"
+                  id="password"
+                />
+              </div>
+            </fieldset>
           </form>
           <button>Create an account</button>
           <div class="logIn">
